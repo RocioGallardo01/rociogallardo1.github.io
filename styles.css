@@ -1,0 +1,336 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+body{
+  
+    background-color: beige;
+
+}
+.main-content{
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    background-position:right;
+
+}
+.left-section{
+    grid-column: span 2;
+    height: 100%;
+    background-color: sandybrown;
+}
+.right-section{
+    grid-column: span 5;
+    background-color: white;
+    height: 100%;
+}
+
+.left-content{
+    padding: 0.5rem 0.7rem;
+
+}
+.profile{
+    width: 100%;
+    border-bottom: 1px solid beige;
+}
+.image{
+    width: 100%;
+    text-align: center;
+}
+.profile img{
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid white;  
+}
+
+.profile img:hover{
+    filter: grayscale(0); 
+    transform:scale(1.05)
+  
+}
+.nombre{
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 0;
+}
+
+.titulo-principal{
+  
+    font-size:  1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: beige;
+    padding-top: 3rem;
+}
+.contacto-Info ul{
+    padding: 1rem 0;
+}
+.contacto-Info ul li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: brown;
+
+}
+.contacto-Info ul li i{
+    padding-right: 0.4rem;
+    font-size:  1rem;
+    color: brown;
+ }
+ .titulo{ 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: beige;
+    font-size:  1.2rem;
+    padding-right: 1rem;
+ }
+ .section-skills ul {
+    padding: 1rem 0;
+ }
+
+ .section-skills ul li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: brown;
+  
+ }
+ .section-skills ul li{
+    padding-right: 2rem;
+    font-size:  0.8rem;
+    color: brown;
+    }
+
+.titulo2{
+    text-transform: uppercase;
+    color: beige;
+    font-size:  1.2rem;
+    padding-right: 1rem;
+
+}
+
+.section-language ul{
+    padding-top: 2re,;
+}
+.section-language ul li{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: .4rem 0;
+
+}
+.progreso-barra{
+    width: 100%;
+    height: .4rem;
+    background-color: beige;
+    position: relative;
+    border-radius:  12px;
+}
+.progreso{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: brown;
+    border-radius: 12px;
+
+}
+.ingles-progreso{
+    width: 70%;
+
+}
+.Frances-progreso{
+    width: 40%;
+}
+.subtitulo{
+    text-transform: uppercase;
+    color: maroon;
+    font-size: 1rem;
+    padding-right: 1rem ;
+}
+.contenido-derecha{
+    padding: 2rem 3rem;
+
+
+}
+.sobremi{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: brown;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.sobremi::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: .1rem;
+    background-color: brown;
+    border-radius: 12px;
+    right: 0;
+    top:50%;
+    transform: translateY(-50%);
+
+}
+.para{
+    line-height: 1.6rem;
+    color: black;
+    padding: 1.4rem;
+    font-size: 0.9rem;
+}
+
+.contenido-principal-derecha{
+    padding: 1rem 2rem;
+}
+.titulo-exp{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: brown;
+    margin-bottom: 1rem;
+    position: relative;
+
+}
+.titulo-exp::after{
+    top: 50%;
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: .2rem;
+    background-color: brown;
+    border-radius: 12px;
+    right: 0;
+    transform: translateY(-50%);
+
+}
+.para{
+    line-height: 1.7rem;
+}
+.lineadetiempo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.lt-titulo{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+}
+.lt-titulo-2{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: brown;
+    text-transform: uppercase;
+
+
+
+}
+.contenidido-tl{
+    border-left: 1px solid chocolate;
+    padding-left: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+.lt-titulo-2::before{
+    content: "";
+    position: absolute;
+    width: .7rem;
+    height: .7rem;
+    background-color: chocolate;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 0;
+    }
+
+.fecha{
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    color: black;
+    text-transform: uppercase;
+
+}
+.parrafo-exp{
+    line-height: 1rem;
+    color: black;
+    padding: 1rem;
+    font-size: 1rem;
+ 
+
+}
+
+.btn{
+    padding: 5px 5px;
+    background: beige;
+    border: 2px solid chocolate;
+    outline: none;
+    border-radius: 8px;
+
+}
+
+.btn2{
+    padding: 5px 5px;
+    background: beige;
+    border: 2px solid chocolate;
+    outline: none; 
+    border-radius: 8px;
+
+}
+
+@media screen and (max-width: 823px) { 
+    .titulo-exp::after {
+        width: 40%;
+    }
+    
+}
+@media screen and (max-width: 681px) { 
+    .titulo-exp::after {
+        width: 30%;
+    }
+    
+}
+@media screen and (max-width: 780px) { 
+    .lineadetiempo {
+        grid-template-columns: repeat (1,1fr);
+    }
+    
+}
+@media screen and (max-width: 780px) { 
+    .left-section{
+        grid-column: span 3;
+
+    }
+    .right-section{
+        grid-column: span 4;
+    }
+    
+}
+@media screen and (max-width: 1200px) { 
+    .main-content {
+        grid-template-columns:repeat (1,1fr);
+    }
+    .profile img{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width: 700px) { 
+    .profile img{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width: 390px) { 
+    .nombre {
+        font-size: 1.5rem;
+    }
+    
+}
+
